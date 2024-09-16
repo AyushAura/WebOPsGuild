@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Note-Taking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Note-Taking App</h1>
+        
+        <!-- Input for new note -->
+        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+        
+        <div class="button-group">
+            <button id="saveBtn">Save Note</button>
+            <button id="clearBtn">Clear Notes</button>
+        </div>
+
+        <h2>Saved Notes</h2>
+        <div id="notesContainer"></div>
+    </div>
+
+    <!-- Modal for editing notes -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Edit Note</h2>
+            <textarea id="editNoteInput"></textarea>
+            <button id="updateBtn">Update Note</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
